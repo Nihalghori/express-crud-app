@@ -1,0 +1,158 @@
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Background color for the body */
+body {
+    background-color: #f7f7f7;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Container for the form and posts */
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form h2 {
+    margin: 10px 10px 15px 10px;
+    margin-left: 500px;
+    font-weight: 600;
+    font-size: 54px;
+    color: #333;
+}
+
+form label {
+    position: relative;
+    left: 25%;
+    top: 18px;
+    margin-bottom: 5px;
+    font-size: 36px;
+    font-weight: bold;
+    color: #000000;
+}
+
+input[type="text"],
+textarea {
+    padding: 10px;
+    width: 50%;
+    position: relative;
+    left: 25%;
+    top: 20px;
+    margin-bottom: 15px;
+    background-color: #000000;
+    border: 2px solid #f3ecec;
+    border-radius: 18px;
+    color:white;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    width: 90px;
+   position: relative;
+   left: 46%;
+   top: 25px;
+    background-color: #007bff;
+    border-radius: 18px;
+    border:2px solid #007bff;
+   
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Posts styles */
+h2 {
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 24px;
+    color: #333;
+}
+
+.post {
+    position: relative;
+    width: 30%;
+    color: white;
+    left: 35%;
+    top: 40px;
+    margin-bottom: 30px;
+    padding: 55px;
+    border: 4px dotted #0a0a0a;
+    border-radius: 20px;
+    background-color: #494848;
+}
+
+.post h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.post p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #fffefe;
+}
+
+.post p.regards {
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.post .bi {
+    font-size: 20px;
+    color: #000000;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.post .bi:hover {
+    color: #0056b3;
+}
+
+/* Toast notification styles */
+#toast {
+    position: relative;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+#toast.show {
+    opacity: 1;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 600px) {
+    form, .container {
+        max-width: 90%;
+    }
+}
+
